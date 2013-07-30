@@ -7,7 +7,7 @@ A Blackjack pie, hot and fresh out of the oven.  Play against the computer!
 Simple!  Fork this repo, then run:
 
 ```bash
-$ python blackjack.py
+$ python -i blackjack.py
 ```
 NOTE: blackjack.py requires Python 3.
 
