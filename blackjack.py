@@ -245,15 +245,17 @@ def play_hand(player, dealer):
 def determine_outcome(player, dealer):
 	#handles case where player has split his cards
 	clear_screen()
-	dealer.show_hand()
-	player.show_hand()
+	
 	dealer_score = dealer.get_hand_value()
 	player_score = player.get_hand_value()
 	#print("Dealer Score: " + str(dealer_score) + " Player Score: " + str(player_score))
 	if player_score > 21:
 		player.money -= player.current_bet
+		player.show_hand()
 		print("You busted!  You lost $" + str(player.current_bet) + " and have $" + str(player.money) + " remaining.")
 		return None
+	dealer.show_hand()
+	player.show_hand()
 	if player_score == 21 and len(player.hand) == 2:
 		player.money  = ceil(1.5 * player.current_bet)
 		print("Nice, natural blackjack! You get 1.5x your original bet of $" + str(player.current_bet) +" and currently have $" + player.money + " remaining")
