@@ -5,11 +5,6 @@
 # Built with love specifically for the Hacker School Fa13 application
 
 
-#To-do
-#1. Add ascii symbols for the suits
-#2. Flesh out the methods according to comments
-#Global Variables
-#How should the deck work?  Global cariable?
 
 from random import shuffle  # import the shuffle method for shuffling cards
 import os  # will allow us to clear the terminal
