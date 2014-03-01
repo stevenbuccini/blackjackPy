@@ -2,7 +2,8 @@
 #### Blackjack ###
 ##################
 # Author: Steven Buccini
-# Built with love specifically for the Hacker School Fa13 application
+# Built with love specifically for the Hacker School Fa13 application.
+# Recycled for my Hacker School Fa14 application.
 
 
 
