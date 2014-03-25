@@ -330,13 +330,13 @@ def main():
     try:
         money = int(input("Let's play some blackjack!  How much money would you like to play with (default is 500)?\n"))
         name = str(input("And what is your name?\n"))
-        if name == "Dealer":
+        if name.lower() == "dealer":
             print("Only the dealer can be the dealer. Please enter another name.\n")
         user = Player(name, money)
         dealer = Dealer()
         clear_screen()
         print("Thanks for playing today, " + name + "!  Let's go over a few basics:\n")
-        help()  # rints out some information for the user.
+        help()  # prints out some information for the user.
         while (user.money > 0):
             play_hand(user, dealer)  # play hands until the user runs out of money.
         print("Thanks for playing!")
